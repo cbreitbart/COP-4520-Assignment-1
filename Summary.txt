@@ -1,0 +1,12 @@
+The program uses a atomic counter for the dynamic load balancing so that
+the execution time between threads is approximately equivelant. AtomicInteger is a built in class
+in Java. A concurrent queue is utlized to ensure thread safety during concurrent access. The program utilizes 8 threads and starts from 2 and goes to 10^8 checking for all prime
+numbers, and then writes into the file "primes.txt" the total time elased, the total number of prime numbers found,
+all of the prime numbers found added together, and the top 10 largest prime numbers found. The program also utilizes an
+efficient algorithm to check for prime numbers as the square root method of checking if a 
+number is prime, uses less iterations then compared to the division by 2 algorithm. 
+
+I found my program takes around 28 seconds to execute, which for Java is good. It finds 5761455 total prime numbers between 2 
+and 10^8. All of the primes found summed together comes to 279209790387276.
+The top 10 largest prime numbers found are: 99999787 99999821 99999827 99999839 99999847 99999931
+ 99999941 99999959 99999971 99999989 
